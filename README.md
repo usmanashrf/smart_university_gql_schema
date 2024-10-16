@@ -45,17 +45,18 @@ CREATE GRAPH TYPE SmartEduUniversity AS {
    }),
    (:Topic {
       title :: STRING NOT NULL,
-      estimatedTime :: INT  -- Time to complete in minutes
+      content: STRING
    }),
    (:Subtopic {
       title :: STRING NOT NULL
+      content: STRING NOT NULL
    }),
    (:ClassSection {
       sectionCode :: STRING NOT NULL,
-      semester :: STRING NOT NULL
+      quarter :: STRING NOT NULL
    }),
    (:Assessment {
-      assessmentType :: STRING NOT NULL,  -- e.g., Assignment, Exam
+      assessmentType :: STRING NOT NULL,  -- e.g., Initial Assignment, Final Exam
       score :: FLOAT,
       feedback :: STRING
    }),
