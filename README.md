@@ -1,0 +1,1 @@
+# smart_university_gql_schema
