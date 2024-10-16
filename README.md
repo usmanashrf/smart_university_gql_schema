@@ -8,7 +8,7 @@ CREATE GRAPH TYPE SmartEduUniversity AS {
       name :: STRING NOT NULL,
       rollNumber :: STRING NOT NULL,
       email :: STRING,
-      caliber :: STRING,  -- e.g., Beginner, Intermediate, Advanced
+      caliber :: STRING,  -- e.g., Beginner, Intermediate, Advanced    -it could be Enum
       progress :: FLOAT  -- Tracks progress percentage through courses
    }),
    (:Instructor {
