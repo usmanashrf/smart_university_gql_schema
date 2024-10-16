@@ -31,7 +31,6 @@ CREATE GRAPH TYPE SmartEduUniversity AS {
    }),
    (:CourseContent {
       title :: STRING NOT NULL,
-      contentType :: STRING NOT NULL,  -- e.g., Video, Article, Exercise
       difficultyLevel :: STRING,  -- Tailored difficulty: Beginner, Intermediate, etc.
       duration :: INT  -- Estimated time to complete in minutes
    }),
